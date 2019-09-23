@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
         float resultado = peso / (altura * altura);
 
-        Intent intentEnvia = new Intent(getApplicationContext(), recebe.class);
+        //Toast.makeText(this, "Resultado: " + resultado, Toast.LENGTH_SHORT).show();
+        Intent intentEnvia = new Intent(this, recebe.class);
         Bundle result = new Bundle();
 
         result.putFloat("chave_float", resultado);
@@ -35,17 +37,5 @@ public class MainActivity extends AppCompatActivity {
         intentEnvia.putExtras(result);
 
         startActivity(intentEnvia);
-
-        if(resultado < 19){
-            //abaixo
-            lblResultado.setText("Abaixo do peso!");
-        }
-        else if(resultado > 32){
-            lblResultado.setText("Acima do peso!");
-        }
-        else{
-            //ok
-            lblResultado.setText("Peso ok!");
-        }
     }
 }
