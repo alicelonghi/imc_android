@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IMC</string>
+    <string name="abaixo">Abaixo do peso</string>
+    <string name="acima">Acima do peso</string>
+    <string name="ideal">Peso ideal</string>
+    <string name="altura">Altura:</string>
+    <string name="peso">Peso:</string>
+    <string name="calcular">Calcular:</string>
+</resources>
