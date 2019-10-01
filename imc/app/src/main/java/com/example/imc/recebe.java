@@ -21,6 +21,7 @@ public class recebe extends AppCompatActivity {
 
         if(result != null) {
             Float resultado = result.getFloat("chave_float");
+<<<<<<< HEAD
             if(resultado < 19){
                 //abaixo
                 resultIMC.setText(R.string.abaixo);
@@ -31,6 +32,19 @@ public class recebe extends AppCompatActivity {
             else{
                 //ok
                 resultIMC.setText(R.string.ideal);
+=======
+            //resultIMC.setText(resultado.toString());
+            if(resultado < 19){
+                //abaixo
+                resultIMC.setText("Abaixo do peso!");
+            }
+            else if(resultado > 32){
+                resultIMC.setText("Acima do peso!");
+            }
+            else{
+                //ok
+                resultIMC.setText("Peso ok!");
+>>>>>>> 5ba80944408064e81557a3a96df854f98a11d0c4
             }
             Toast.makeText(recebe.this, "Resultado: " + resultado, Toast.LENGTH_SHORT).show();
         }

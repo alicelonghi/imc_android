@@ -6,17 +6,27 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".MainActivity">
 
+<<<<<<< HEAD
     <EditText
         android:id="@+id/txtPeso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/peso"
         android:inputType="numberDecimal" />
+=======
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:hint="Informe o peso"
+    android:id="@+id/txtPeso"/>
+>>>>>>> 5ba80944408064e81557a3a96df854f98a11d0c4
 
 <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:inputType="numberDecimal"
+<<<<<<< HEAD
     android:hint="@string/altura"
     android:id="@+id/txtAltura"/>
 
@@ -26,6 +36,16 @@ tools:context=".MainActivity">
         android:layout_height="wrap_content"
         android:onClick="btnCalcularOnClick"
         android:text="@string/calcular" />
+=======
+    android:hint="Informe a altura"
+    android:id="@+id/txtAltura"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Calcular IMC"
+    android:onClick="btnCalcularOnClick" />
+>>>>>>> 5ba80944408064e81557a3a96df854f98a11d0c4
 
 <TextView
     android:layout_width="match_parent"
